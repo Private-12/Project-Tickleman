@@ -1,0 +1,35 @@
+body { background-color: black;}
+h1 { 
+    color: red;
+    text-align: center;}
+.txt2 {
+    position: relative;
+    text-align: center;
+}
+.Dtxt2 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+img.F {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 45%);    
+}
+img:hover.F {
+    cursor: pointer;
+}
+img.Fu {
+    position: absolute;
+    width: 5%;
+    right: 1%;
+    bottom: 2%;
+    opacity: 20%;
+    transition: opacity 0.5s;    
+}
+img.Fu:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
