@@ -30,3 +30,9 @@ function toggleFullscreen() {
         }
     }
 }
+var File = document.getElementById("File");
+
+function ani() {
+    File.classList.add("ani");
+    elem.classList.add("blink");
+}
