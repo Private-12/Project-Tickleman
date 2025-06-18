@@ -1,5 +1,5 @@
-var elem = document.getElementById("fullscreen"); // Get the element
-
+var elems = document.getElementById("fullscreens"); // Get the element
+var elem = document.getElementById("fullscreen");
 function toggleFullscreen() {
     if (
         document.fullscreenElement ||
@@ -34,5 +34,15 @@ var File = document.getElementById("File");
 
 function ani() {
     File.classList.add("ani");
-    elem.classList.add("blink");
+    elems.classList.add("blink");
 }
+function delayedLink(url, delay) {
+  console.log('delayedLink called');
+  setTimeout(function() {
+    window.location.href = url;
+  }, delay);
+}
+
+window.toggleFullscreen = toggleFullscreen;
+window.delayedLink = delayedLink;
+window.ani = ani;

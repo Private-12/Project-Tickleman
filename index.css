@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+iframe {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+img.Fu {
+    position: absolute;
+    width: 5%;
+    right: 1%;
+    bottom: 2%;
+    opacity: 40%;
+    transition: opacity 0.3s ease-in-out; 
+}
+img.Fu:hover {
+    opacity: 100%;
+    cursor: pointer;
+}

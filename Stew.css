@@ -1,0 +1,106 @@
+body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    animation: bblink 1s both;
+    background-color: #1e1e1e;
+    font-family: 'Inter', sans-serif;
+}
+
+.Back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e1e1e;
+}
+
+#Back {
+    position: absolute;
+    width: 10%;
+    bottom: 2.5%;
+    left: 1.5%;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+#Back:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+@keyframes bblink {
+    from { filter: brightness(0); }
+    to { filter: brightness(100%); }
+}
+
+.input {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    width: 20%;
+    height: 10%;
+    font-size: 1.5em;
+    color: #eeeeee;
+    background-color: #2e2e2e;
+    border: 2px solid #00bcd4;
+    outline: none;
+}
+
+.inputtxt {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #00bcd4, #00acc1);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold;
+}
+
+.Submit {
+    color: white;
+    background-color: #2196f3;
+    border: none;
+    position: absolute;
+    font-size: x-large;
+    top: 60%;
+    left: 45%;
+    width: 10%;
+    height: 5%;
+    opacity: 0.9;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+}
+.Submit:hover {
+    background-color: #1976d2;
+    cursor: pointer;
+}
+.Submit:active {
+    background-color: #1565c0;
+}
+
+.result {
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    width: 20%;
+    height: 10%;
+    font-size: 1.5em;
+    color: #eeeeee;
+    background-color: #2e2e2e;
+    border: 2px solid #00bcd4;
+}
+
+#restxt {
+    font-size: 1.5em;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
